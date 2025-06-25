@@ -18,7 +18,7 @@ export default function ParksPage() {
       </Grid>
       <Grid>
         {PARKS.map((park) => (
-          <ParkCard key={park.id} park={park} />
+          <ParkCard key={park.id} park={park} href={`/parks/${park.id}`} />
         ))}
       </Grid>
     </DefaultLayout>
