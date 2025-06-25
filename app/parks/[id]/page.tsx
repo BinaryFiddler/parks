@@ -54,7 +54,9 @@ export default function ParkPage({ params }) {
               <Grid>
                 {park.visits.map((visit, i) => (
                   <Row key={i}>
-                    <Badge>{visit.start} - {visit.end}</Badge>
+                    <Badge>
+                      {visit.start} - {visit.end}
+                    </Badge>
                   </Row>
                 ))}
               </Grid>
@@ -70,9 +72,7 @@ export default function ParkPage({ params }) {
               <ul className="memories">
                 {park.memories.map((m, i) => (
                   <li key={i}>
-                    {m.image && (
-                      <img src={m.image} alt={m.text} style={{ width: '100%', borderRadius: '4px', marginBottom: '4px' }} />
-                    )}
+                    {m.image && <img src={m.image} alt={m.text} style={{ width: '100%', borderRadius: '4px', marginBottom: '4px' }} />}
                     {m.text}
                   </li>
                 ))}
@@ -84,4 +84,3 @@ export default function ParkPage({ params }) {
     </DefaultLayout>
   );
 }
-

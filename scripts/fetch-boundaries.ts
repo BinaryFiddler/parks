@@ -1,10 +1,8 @@
-import fs from 'fs';
-import path from 'path';
-import https from 'https';
+const fs = require('fs');
+const path = require('path');
+const https = require('https');
 
-const DATA_URL =
-  process.env.NPS_BOUNDARIES_URL ||
-  'https://opendata.arcgis.com/datasets/nps-boundaries.geojson';
+const DATA_URL = process.env.NPS_BOUNDARIES_URL || 'https://opendata.arcgis.com/datasets/nps-boundaries.geojson';
 const LOCAL_FILE = process.env.NPS_BOUNDARIES_FILE;
 
 function download(url: string): Promise<string> {
@@ -20,7 +18,7 @@ function download(url: string): Promise<string> {
 }
 
 async function main() {
-  let raw: string | undefined;
+  let raw: string;
   if (LOCAL_FILE && fs.existsSync(LOCAL_FILE)) {
     console.log(`Reading local GeoJSON from ${LOCAL_FILE}`);
     raw = fs.readFileSync(LOCAL_FILE, 'utf8');

@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { MapContainer, TileLayer, GeoJSON } from 'react-leaflet';
+import type { LatLngExpression } from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 
 interface MapProps {
@@ -17,12 +18,12 @@ const Map: React.FC<MapProps> = ({ parkCode, name }) => {
       .catch(() => setData(null));
   }, [parkCode]);
 
-  const center = data?.properties?.center || [37.8, -96];
+  const center: LatLngExpression = data?.properties?.center || [37.8, -96];
 
   return (
     <MapContainer style={{ height: '450px', width: '100%' }} center={center} zoom={7} scrollWheelZoom={false}>
       <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-      {data && <GeoJSON data={data} style={{ color: 'red' }} />}
+      {data && <GeoJSON data={data} pathOptions={{ color: 'red' }} />}
     </MapContainer>
   );
 };
