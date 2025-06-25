@@ -10,13 +10,16 @@
     "dev": "next -p 10000",
     "build": "next build",
     "start": "PORT=10000 next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "fetch:boundaries": "ts-node scripts/fetch-boundaries.ts"
   },
   "dependencies": {
     "next": "^15.2.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "sass": "1.85.1"
+    "sass": "1.85.1",
+    "leaflet": "^1.9.4",
+    "react-leaflet": "^4.2.1"
   },
   "devDependencies": {
     "@types/node": "^22.13.10",

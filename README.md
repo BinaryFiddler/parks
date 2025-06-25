@@ -21,6 +21,12 @@ If you need to run node script without running the server, use this example to g
 npm run script example
 ```
 
+To download boundary data for all parks, run:
+
+```sh
+npm run fetch:boundaries
+```
+
 ### Contact
 
 If you have questions ping me on Twitter, [@wwwjim](https://www.twitter.com/wwwjim). Or you can ping [@internetxstudio](https://x.com/internetxstudio).
