@@ -62,7 +62,7 @@ export default function ParkPage({ params }) {
           </Row>
         )}
         <Row>
-          <Map query={park.name} />
+          <Map parkCode={park.parkCode} name={park.name} />
         </Row>
         {park.memories && park.memories.length > 0 && (
           <Row>
