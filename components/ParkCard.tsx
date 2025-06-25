@@ -9,12 +9,13 @@ import type { Park } from '@data/parks';
 
 interface ParkCardProps {
   park: Park;
+  href?: string;
 }
 
-const ParkCard: React.FC<ParkCardProps> = ({ park }) => {
+const ParkCard: React.FC<ParkCardProps> = ({ park, href }) => {
   const heroImage = park.memories?.find((m) => m.image)?.image;
 
-  return (
+  const content = (
     <Card title={park.name} style={{ marginBottom: '1rem' }}>
       <Grid>
         {heroImage && (
@@ -60,6 +61,16 @@ const ParkCard: React.FC<ParkCardProps> = ({ park }) => {
       </Grid>
     </Card>
   );
+
+  if (href) {
+    return (
+      <a href={href} className={styles.link} role="link">
+        {content}
+      </a>
+    );
+  }
+
+  return content;
 };
 
 export default ParkCard;
