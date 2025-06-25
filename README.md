@@ -27,6 +27,11 @@ To download boundary data for all parks, run:
 npm run fetch:boundaries
 ```
 
+If the script fails due to network restrictions, manually download
+`nps-boundaries.geojson` from the National Park Service Open Data site and set
+the environment variable `NPS_BOUNDARIES_FILE` to the downloaded file before
+running the command.
+
 ### Contact
 
 If you have questions ping me on Twitter, [@wwwjim](https://www.twitter.com/wwwjim). Or you can ping [@internetxstudio](https://x.com/internetxstudio).
