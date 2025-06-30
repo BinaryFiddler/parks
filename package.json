@@ -11,7 +11,8 @@
     "build": "next build",
     "start": "PORT=10000 next start",
     "lint": "next lint",
-    "fetch:boundaries": "ts-node scripts/fetch-boundaries.ts"
+    "fetch:boundaries": "ts-node scripts/fetch-boundaries.ts",
+    "generate:park-images": "node scripts/generate-park-images.js"
   },
   "dependencies": {
     "@turf/turf": "^7.2.0",

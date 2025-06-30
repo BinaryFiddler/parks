@@ -14,6 +14,7 @@ export interface Park {
   name: string;
   states: string[];
   description: string;
+  image?: string;
   boundaryUrl?: string;
   visits?: Visit[];
   memories?: Memory[];
@@ -26,6 +27,7 @@ export const PARKS: Park[] = [
     name: 'Acadia National Park',
     states: ['Maine'],
     description: 'Picturesque Atlantic coastline with granite peaks and rocky beaches.',
+    image: '/park-images/acadia.svg',
     boundaryUrl: '/boundaries/acad.geojson',
   },
   {
@@ -34,6 +36,7 @@ export const PARKS: Park[] = [
     name: 'National Park of American Samoa',
     states: ['American Samoa'],
     description: 'Tropical rainforests and coral reefs across Samoan islands.',
+    image: '/park-images/american-samoa.svg',
     boundaryUrl: '/boundaries/npsa.geojson',
   },
   {
@@ -42,6 +45,7 @@ export const PARKS: Park[] = [
     name: 'Arches National Park',
     states: ['Utah'],
     description: 'Home to over 2,000 natural sandstone arches.',
+    image: '/park-images/arches.svg',
     boundaryUrl: '/boundaries/arch.geojson',
   },
   {
@@ -50,6 +54,7 @@ export const PARKS: Park[] = [
     name: 'Badlands National Park',
     states: ['South Dakota'],
     description: 'Eroded buttes and fossil-rich formations.',
+    image: '/park-images/badlands.svg',
     boundaryUrl: '/boundaries/badl.geojson',
   },
   {
@@ -58,6 +63,7 @@ export const PARKS: Park[] = [
     name: 'Big Bend National Park',
     states: ['Texas'],
     description: 'Chihuahuan desert landscapes along the Rio Grande.',
+    image: '/park-images/big-bend.svg',
     boundaryUrl: '/boundaries/bibe.geojson',
   },
   {
@@ -66,6 +72,7 @@ export const PARKS: Park[] = [
     name: 'Biscayne National Park',
     states: ['Florida'],
     description: 'Aquatic park preserving coral reefs and islands near Miami.',
+    image: '/park-images/biscayne.svg',
     boundaryUrl: '/boundaries/bisc.geojson',
   },
   {
@@ -74,6 +81,7 @@ export const PARKS: Park[] = [
     name: 'Black Canyon of the Gunnison National Park',
     states: ['Colorado'],
     description: 'Steep, dramatic canyon carved by the Gunnison River.',
+    image: '/park-images/black-canyon-of-the-gunnison.svg',
     boundaryUrl: '/boundaries/blca.geojson',
   },
   {
@@ -82,6 +90,7 @@ export const PARKS: Park[] = [
     name: 'Bryce Canyon National Park',
     states: ['Utah'],
     description: 'Known for crimson hoodoos and sweeping vistas.',
+    image: '/park-images/bryce-canyon.svg',
     boundaryUrl: '/boundaries/brca.geojson',
     visits: [
       { start: '2018-05-02', end: '2018-05-05' },
@@ -99,6 +108,7 @@ export const PARKS: Park[] = [
     name: 'Canyonlands National Park',
     states: ['Utah'],
     description: 'Maze of canyons carved by the Colorado River.',
+    image: '/park-images/canyonlands.svg',
     boundaryUrl: '/boundaries/cany.geojson',
   },
   {
@@ -107,6 +117,7 @@ export const PARKS: Park[] = [
     name: 'Capitol Reef National Park',
     states: ['Utah'],
     description: 'Colorful cliffs and the Waterpocket Fold.',
+    image: '/park-images/capitol-reef.svg',
     boundaryUrl: '/boundaries/care.geojson',
   },
   {
@@ -115,6 +126,7 @@ export const PARKS: Park[] = [
     name: 'Carlsbad Caverns National Park',
     states: ['New Mexico'],
     description: 'Massive cave system with stalactites.',
+    image: '/park-images/carlsbad-caverns.svg',
     boundaryUrl: '/boundaries/cave.geojson',
   },
   {
@@ -123,6 +135,7 @@ export const PARKS: Park[] = [
     name: 'Channel Islands National Park',
     states: ['California'],
     description: 'Isolated islands with unique wildlife off California coast.',
+    image: '/park-images/channel-islands.svg',
     boundaryUrl: '/boundaries/chis.geojson',
   },
   {
@@ -131,6 +144,7 @@ export const PARKS: Park[] = [
     name: 'Congaree National Park',
     states: ['South Carolina'],
     description: 'Old-growth bottomland hardwood forest and floodplain.',
+    image: '/park-images/congaree.svg',
     boundaryUrl: '/boundaries/cong.geojson',
   },
   {
@@ -139,6 +153,7 @@ export const PARKS: Park[] = [
     name: 'Crater Lake National Park',
     states: ['Oregon'],
     description: 'Deep blue volcanic lake in Oregon.',
+    image: '/park-images/crater-lake.svg',
     boundaryUrl: '/boundaries/crla.geojson',
   },
   {
@@ -147,6 +162,7 @@ export const PARKS: Park[] = [
     name: 'Cuyahoga Valley National Park',
     states: ['Ohio'],
     description: 'Forested areas and the Cuyahoga River near Cleveland.',
+    image: '/park-images/cuyahoga-valley.svg',
     boundaryUrl: '/boundaries/cuva.geojson',
   },
   {
@@ -155,6 +171,7 @@ export const PARKS: Park[] = [
     name: 'Death Valley National Park',
     states: ['California', 'Nevada'],
     description: 'Hottest, driest and lowest U.S. national park.',
+    image: '/park-images/death-valley.svg',
     boundaryUrl: '/boundaries/deva.geojson',
   },
   {
@@ -163,6 +180,7 @@ export const PARKS: Park[] = [
     name: 'Denali National Park',
     states: ['Alaska'],
     description: "Home to North America's tallest peak.",
+    image: '/park-images/denali.svg',
     boundaryUrl: '/boundaries/dena.geojson',
   },
   {
@@ -171,6 +189,7 @@ export const PARKS: Park[] = [
     name: 'Dry Tortugas National Park',
     states: ['Florida'],
     description: 'Remote islands with historic Fort Jefferson.',
+    image: '/park-images/dry-tortugas.svg',
     boundaryUrl: '/boundaries/drto.geojson',
   },
   {
@@ -179,6 +198,7 @@ export const PARKS: Park[] = [
     name: 'Everglades National Park',
     states: ['Florida'],
     description: 'Vast subtropical wetlands with diverse wildlife.',
+    image: '/park-images/everglades.svg',
     boundaryUrl: '/boundaries/ever.geojson',
   },
   {
@@ -187,6 +207,7 @@ export const PARKS: Park[] = [
     name: 'Gates of the Arctic National Park',
     states: ['Alaska'],
     description: 'Pristine arctic wilderness with no roads.',
+    image: '/park-images/gates-of-the-arctic.svg',
     boundaryUrl: '/boundaries/gaar.geojson',
   },
   {
@@ -195,6 +216,7 @@ export const PARKS: Park[] = [
     name: 'Gateway Arch National Park',
     states: ['Missouri'],
     description: 'Monument to westward expansion on the Mississippi River.',
+    image: '/park-images/gateway-arch.svg',
     boundaryUrl: '/boundaries/jeff.geojson',
   },
   {
@@ -203,6 +225,7 @@ export const PARKS: Park[] = [
     name: 'Glacier National Park',
     states: ['Montana'],
     description: 'Glacially carved peaks and valleys on the Continental Divide.',
+    image: '/park-images/glacier.svg',
     boundaryUrl: '/boundaries/glac.geojson',
   },
   {
@@ -211,6 +234,7 @@ export const PARKS: Park[] = [
     name: 'Glacier Bay National Park',
     states: ['Alaska'],
     description: "Massive glaciers and marine wildlife along Alaska's coast.",
+    image: '/park-images/glacier-bay.svg',
     boundaryUrl: '/boundaries/glba.geojson',
   },
   {
@@ -219,6 +243,7 @@ export const PARKS: Park[] = [
     name: 'Grand Canyon National Park',
     states: ['Arizona'],
     description: 'A natural wonder carved by the Colorado River.',
+    image: '/park-images/grand-canyon.svg',
     boundaryUrl: '/boundaries/grca.geojson',
     visits: [
       { start: '2019-07-10', end: '2019-07-12' },
@@ -236,6 +261,7 @@ export const PARKS: Park[] = [
     name: 'Grand Teton National Park',
     states: ['Wyoming'],
     description: 'Jagged mountain range and valley in Wyoming.',
+    image: '/park-images/grand-teton.svg',
     boundaryUrl: '/boundaries/grte.geojson',
   },
   {
@@ -244,6 +270,7 @@ export const PARKS: Park[] = [
     name: 'Great Basin National Park',
     states: ['Nevada'],
     description: 'Desert mountains and ancient bristlecone pines.',
+    image: '/park-images/great-basin.svg',
     boundaryUrl: '/boundaries/grba.geojson',
   },
   {
@@ -252,6 +279,7 @@ export const PARKS: Park[] = [
     name: 'Great Sand Dunes National Park',
     states: ['Colorado'],
     description: 'Towering sand dunes at the base of the Sangre de Cristos.',
+    image: '/park-images/great-sand-dunes.svg',
     boundaryUrl: '/boundaries/grsa.geojson',
   },
   {
@@ -260,6 +288,7 @@ export const PARKS: Park[] = [
     name: 'Great Smoky Mountains National Park',
     states: ['Tennessee', 'North Carolina'],
     description: 'Lush Appalachian mountains famed for misty vistas.',
+    image: '/park-images/great-smoky-mountains.svg',
     boundaryUrl: '/boundaries/grsm.geojson',
   },
   {
@@ -268,6 +297,7 @@ export const PARKS: Park[] = [
     name: 'Guadalupe Mountains National Park',
     states: ['Texas'],
     description: 'Chihuahuan desert park with high peaks and fossils.',
+    image: '/park-images/guadalupe-mountains.svg',
     boundaryUrl: '/boundaries/gumo.geojson',
   },
   {
@@ -276,6 +306,7 @@ export const PARKS: Park[] = [
     name: 'Haleakalā National Park',
     states: ['Hawaii'],
     description: 'Volcanic crater and sub-tropical ecosystems on Maui.',
+    image: '/park-images/haleakala.svg',
     boundaryUrl: '/boundaries/hale.geojson',
   },
   {
@@ -284,6 +315,7 @@ export const PARKS: Park[] = [
     name: "Hawai'i Volcanoes National Park",
     states: ['Hawaii'],
     description: 'Active volcanoes and lava flows on the Big Island.',
+    image: '/park-images/hawaii-volcanoes.svg',
     boundaryUrl: '/boundaries/havo.geojson',
   },
   {
@@ -292,6 +324,7 @@ export const PARKS: Park[] = [
     name: 'Hot Springs National Park',
     states: ['Arkansas'],
     description: 'Thermal springs and historic bathhouses in Arkansas.',
+    image: '/park-images/hot-springs.svg',
     boundaryUrl: '/boundaries/hosp.geojson',
   },
   {
@@ -300,6 +333,7 @@ export const PARKS: Park[] = [
     name: 'Indiana Dunes National Park',
     states: ['Indiana'],
     description: 'Sand dunes and beaches along southern Lake Michigan.',
+    image: '/park-images/indiana-dunes.svg',
     boundaryUrl: '/boundaries/indu.geojson',
   },
   {
@@ -308,6 +342,7 @@ export const PARKS: Park[] = [
     name: 'Isle Royale National Park',
     states: ['Michigan'],
     description: 'Remote island wilderness in Lake Superior.',
+    image: '/park-images/isle-royale.svg',
     boundaryUrl: '/boundaries/isro.geojson',
   },
   {
@@ -316,6 +351,7 @@ export const PARKS: Park[] = [
     name: 'Joshua Tree National Park',
     states: ['California'],
     description: 'Desert park named for its Joshua tree forests.',
+    image: '/park-images/joshua-tree.svg',
     boundaryUrl: '/boundaries/jotr.geojson',
   },
   {
@@ -324,6 +360,7 @@ export const PARKS: Park[] = [
     name: 'Katmai National Park',
     states: ['Alaska'],
     description: 'Brown bear habitat and the Valley of Ten Thousand Smokes.',
+    image: '/park-images/katmai.svg',
     boundaryUrl: '/boundaries/katm.geojson',
   },
   {
@@ -332,6 +369,7 @@ export const PARKS: Park[] = [
     name: 'Kenai Fjords National Park',
     states: ['Alaska'],
     description: "Glacial fjords and wildlife on Alaska's coast.",
+    image: '/park-images/kenai-fjords.svg',
     boundaryUrl: '/boundaries/kefj.geojson',
   },
   {
@@ -340,6 +378,7 @@ export const PARKS: Park[] = [
     name: 'Kings Canyon National Park',
     states: ['California'],
     description: 'Deep glacier-carved valley adjacent to Sequoia.',
+    image: '/park-images/kings-canyon.svg',
     boundaryUrl: '/boundaries/kica.geojson',
   },
   {
@@ -348,6 +387,7 @@ export const PARKS: Park[] = [
     name: 'Kobuk Valley National Park',
     states: ['Alaska'],
     description: 'Dunes and caribou migration in Arctic Alaska.',
+    image: '/park-images/kobuk-valley.svg',
     boundaryUrl: '/boundaries/kova.geojson',
   },
   {
@@ -356,6 +396,7 @@ export const PARKS: Park[] = [
     name: 'Lake Clark National Park',
     states: ['Alaska'],
     description: 'Volcanoes, glaciers, and salmon-rich rivers in Alaska.',
+    image: '/park-images/lake-clark.svg',
     boundaryUrl: '/boundaries/lacl.geojson',
   },
   {
@@ -364,6 +405,7 @@ export const PARKS: Park[] = [
     name: 'Lassen Volcanic National Park',
     states: ['California'],
     description: 'Hydrothermal features and numerous volcanic peaks.',
+    image: '/park-images/lassen-volcanic.svg',
     boundaryUrl: '/boundaries/lavo.geojson',
   },
   {
@@ -372,6 +414,7 @@ export const PARKS: Park[] = [
     name: 'Mammoth Cave National Park',
     states: ['Kentucky'],
     description: "World's longest known cave system.",
+    image: '/park-images/mammoth-cave.svg',
     boundaryUrl: '/boundaries/maca.geojson',
   },
   {
@@ -380,6 +423,7 @@ export const PARKS: Park[] = [
     name: 'Mesa Verde National Park',
     states: ['Colorado'],
     description: 'Ancient Pueblo cliff dwellings.',
+    image: '/park-images/mesa-verde.svg',
     boundaryUrl: '/boundaries/meve.geojson',
   },
   {
@@ -388,6 +432,7 @@ export const PARKS: Park[] = [
     name: 'Mount Rainier National Park',
     states: ['Washington'],
     description: 'Glaciated stratovolcano and subalpine meadows.',
+    image: '/park-images/mount-rainier.svg',
     boundaryUrl: '/boundaries/mora.geojson',
   },
   {
@@ -396,6 +441,7 @@ export const PARKS: Park[] = [
     name: 'New River Gorge National Park',
     states: ['West Virginia'],
     description: 'Whitewater river and sandstone cliffs in West Virginia.',
+    image: '/park-images/new-river-gorge.svg',
     boundaryUrl: '/boundaries/neri.geojson',
   },
   {
@@ -404,6 +450,7 @@ export const PARKS: Park[] = [
     name: 'North Cascades National Park',
     states: ['Washington'],
     description: 'Jagged peaks and over 300 glaciers.',
+    image: '/park-images/north-cascades.svg',
     boundaryUrl: '/boundaries/noca.geojson',
   },
   {
@@ -412,6 +459,7 @@ export const PARKS: Park[] = [
     name: 'Olympic National Park',
     states: ['Washington'],
     description: 'Diverse ecosystems from rainforest to alpine.',
+    image: '/park-images/olympic.svg',
     boundaryUrl: '/boundaries/olym.geojson',
   },
   {
@@ -420,6 +468,7 @@ export const PARKS: Park[] = [
     name: 'Petrified Forest National Park',
     states: ['Arizona'],
     description: 'Rainbow-colored petrified wood and desert.',
+    image: '/park-images/petrified-forest.svg',
     boundaryUrl: '/boundaries/pefo.geojson',
   },
   {
@@ -428,6 +477,7 @@ export const PARKS: Park[] = [
     name: 'Pinnacles National Park',
     states: ['California'],
     description: 'Tall spires formed by volcanic activity.',
+    image: '/park-images/pinnacles.svg',
     boundaryUrl: '/boundaries/pinn.geojson',
   },
   {
@@ -436,6 +486,7 @@ export const PARKS: Park[] = [
     name: 'Redwood National Park',
     states: ['California'],
     description: 'Coastal redwood forests and scenic coastline.',
+    image: '/park-images/redwood.svg',
     boundaryUrl: '/boundaries/redw.geojson',
   },
   {
@@ -444,6 +495,7 @@ export const PARKS: Park[] = [
     name: 'Rocky Mountain National Park',
     states: ['Colorado'],
     description: 'High mountain terrain and alpine lakes.',
+    image: '/park-images/rocky-mountain.svg',
     boundaryUrl: '/boundaries/romo.geojson',
     visits: [
       { start: '2020-09-01', end: '2020-09-05' },
@@ -455,6 +507,7 @@ export const PARKS: Park[] = [
     name: 'Saguaro National Park',
     states: ['Arizona'],
     description: 'Sonoran desert landscape with giant saguaro cacti.',
+    image: '/park-images/saguaro.svg',
     boundaryUrl: '/boundaries/sagu.geojson',
   },
   {
@@ -463,6 +516,7 @@ export const PARKS: Park[] = [
     name: 'Sequoia National Park',
     states: ['California'],
     description: 'Home to giant sequoia trees including General Sherman.',
+    image: '/park-images/sequoia.svg',
     boundaryUrl: '/boundaries/seki.geojson',
   },
   {
@@ -471,6 +525,7 @@ export const PARKS: Park[] = [
     name: 'Shenandoah National Park',
     states: ['Virginia'],
     description: "Skyline Drive along Virginia's Blue Ridge Mountains.",
+    image: '/park-images/shenandoah.svg',
     boundaryUrl: '/boundaries/shen.geojson',
   },
   {
@@ -479,6 +534,7 @@ export const PARKS: Park[] = [
     name: 'Theodore Roosevelt National Park',
     states: ['North Dakota'],
     description: 'Badlands terrain and wildlife of North Dakota.',
+    image: '/park-images/theodore-roosevelt.svg',
     boundaryUrl: '/boundaries/thro.geojson',
   },
   {
@@ -487,6 +543,7 @@ export const PARKS: Park[] = [
     name: 'Virgin Islands National Park',
     states: ['U.S. Virgin Islands'],
     description: 'Tropical beaches and coral reefs on St. John.',
+    image: '/park-images/virgin-islands.svg',
     boundaryUrl: '/boundaries/viis.geojson',
   },
   {
@@ -495,6 +552,7 @@ export const PARKS: Park[] = [
     name: 'Voyageurs National Park',
     states: ['Minnesota'],
     description: 'Water-based park of lakes and forests in Minnesota.',
+    image: '/park-images/voyageurs.svg',
     boundaryUrl: '/boundaries/voya.geojson',
   },
   {
@@ -503,6 +561,7 @@ export const PARKS: Park[] = [
     name: 'White Sands National Park',
     states: ['New Mexico'],
     description: 'Gypsum sand dunes in New Mexico.',
+    image: '/park-images/white-sands.svg',
     boundaryUrl: '/boundaries/whsa.geojson',
   },
   {
@@ -511,6 +570,7 @@ export const PARKS: Park[] = [
     name: 'Wind Cave National Park',
     states: ['South Dakota'],
     description: 'Large cave with unique boxwork formations.',
+    image: '/park-images/wind-cave.svg',
     boundaryUrl: '/boundaries/wica.geojson',
   },
   {
@@ -519,6 +579,7 @@ export const PARKS: Park[] = [
     name: 'Wrangell-St. Elias National Park',
     states: ['Alaska'],
     description: 'Largest U.S. park with glaciers and mountains.',
+    image: '/park-images/wrangell-st-elias.svg',
     boundaryUrl: '/boundaries/wrst.geojson',
   },
   {
@@ -527,6 +588,7 @@ export const PARKS: Park[] = [
     name: 'Yellowstone National Park',
     states: ['Wyoming', 'Montana', 'Idaho'],
     description: 'First national park, with geysers and wildlife.',
+    image: '/park-images/yellowstone.svg',
     boundaryUrl: '/boundaries/yell.geojson',
   },
   {
@@ -535,6 +597,7 @@ export const PARKS: Park[] = [
     name: 'Yosemite National Park',
     states: ['California'],
     description: 'Famed granite cliffs, waterfalls and sequoias.',
+    image: '/park-images/yosemite.svg',
     boundaryUrl: '/boundaries/yose.geojson',
     visits: [
       { start: '2021-06-10', end: '2021-06-15' },
@@ -553,6 +616,7 @@ export const PARKS: Park[] = [
     name: 'Zion National Park',
     states: ['Utah'],
     description: 'Towering sandstone cliffs and narrow slot canyons.',
+    image: '/park-images/zion.svg',
     boundaryUrl: '/boundaries/zion.geojson',
   },
 ];
