@@ -13,7 +13,7 @@ interface ParkCardProps {
 }
 
 const ParkCard: React.FC<ParkCardProps> = ({ park, href }) => {
-  const heroImage = park.memories?.find((m) => m.image)?.image;
+  const heroImage = park.image ?? park.memories?.find((m) => m.image)?.image;
 
   const content = (
     <Card title={park.name} style={{ marginBottom: '1rem' }}>

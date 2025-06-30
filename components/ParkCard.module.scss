@@ -16,4 +16,16 @@
   border-radius: 4px;
   margin-bottom: 4px;
 }
-.link { text-decoration: none; color: inherit; }
+.link {
+  text-decoration: none;
+  color: var(--theme-text);
+  background: var(--theme-background);
+  display: block;
+  transition: background 200ms ease, color 200ms ease;
+
+  &:hover,
+  &:focus {
+    background: var(--theme-text);
+    color: var(--theme-background);
+  }
+}
