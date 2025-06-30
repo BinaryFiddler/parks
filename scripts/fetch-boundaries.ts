@@ -3,7 +3,7 @@ const path = require('path');
 const https = require('https');
 
 const DATA_URL = process.env.NPS_BOUNDARIES_URL || 'https://opendata.arcgis.com/datasets/nps-boundaries.geojson';
-const LOCAL_FILE = process.env.NPS_BOUNDARIES_FILE;
+const LOCAL_FILE = process.env.NPS_BOUNDARIES_FILE || path.join(__dirname, '..', 'data', 'nps_boundary.geojson');
 
 function download(url: string): Promise<string> {
   return new Promise((resolve, reject) => {

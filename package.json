@@ -14,6 +14,7 @@
     "fetch:boundaries": "ts-node scripts/fetch-boundaries.ts"
   },
   "dependencies": {
+    "@turf/turf": "^7.2.0",
     "leaflet": "^1.9.4",
     "next": "^15.3.4",
     "react": "^19.1.0",
