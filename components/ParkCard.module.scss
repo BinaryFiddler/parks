@@ -1,31 +1,48 @@
-.image {
-  width: 100%;
-  height: auto;
-  border-radius: 4px;
-  margin-bottom: 8px;
-}
-
-.memories {
-  padding-left: 16px;
-  margin: 0;
-}
-
-.memoryImage {
-  width: 100%;
-  height: auto;
-  border-radius: 4px;
-  margin-bottom: 4px;
-}
-.link {
-  text-decoration: none;
-  color: var(--theme-text);
+.card {
+  display: flex;
+  flex-direction: column;
   background: var(--theme-background);
-  display: block;
-  transition: background 200ms ease, color 200ms ease;
+  color: var(--theme-text);
+  padding: 8px 16px;
+  border: 1px solid var(--theme-border);
+  gap: 4px;
+  text-decoration: none;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
 
   &:hover,
   &:focus {
     background: var(--theme-text);
     color: var(--theme-background);
+
+    .image {
+      mix-blend-mode: luminosity;
+    }
   }
 }
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 4px;
+}
+
+.image {
+  width: calc(100% + 32px);
+  height: auto;
+  margin: -8px -16px 8px -16px;
+  object-fit: cover;
+}
+
+.description {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  white-space: normal;
+  margin-bottom: 12px;
+}
+
+

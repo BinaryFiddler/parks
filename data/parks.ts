@@ -14,7 +14,7 @@ export interface Park {
   name: string;
   states: string[];
   description: string;
-  image?: string;
+  image: string;
   boundaryUrl?: string;
   visits?: Visit[];
   memories?: Memory[];
@@ -92,9 +92,7 @@ export const PARKS: Park[] = [
     description: 'Known for crimson hoodoos and sweeping vistas.',
     image: '/park-images/bryce-canyon.svg',
     boundaryUrl: '/boundaries/brca.geojson',
-    visits: [
-      { start: '2018-05-02', end: '2018-05-05' },
-    ],
+    visits: [{ start: '2018-05-02', end: '2018-05-05' }],
     memories: [
       {
         text: 'Sunrise at Bryce Point',
@@ -245,9 +243,7 @@ export const PARKS: Park[] = [
     description: 'A natural wonder carved by the Colorado River.',
     image: '/park-images/grand-canyon.svg',
     boundaryUrl: '/boundaries/grca.geojson',
-    visits: [
-      { start: '2019-07-10', end: '2019-07-12' },
-    ],
+    visits: [{ start: '2019-07-10', end: '2019-07-12' }],
     memories: [
       {
         text: 'Sunset at Hopi Point',
@@ -454,15 +450,6 @@ export const PARKS: Park[] = [
     boundaryUrl: '/boundaries/noca.geojson',
   },
   {
-    id: 'olympic',
-    parkCode: 'olym',
-    name: 'Olympic National Park',
-    states: ['Washington'],
-    description: 'Diverse ecosystems from rainforest to alpine.',
-    image: '/park-images/olympic.svg',
-    boundaryUrl: '/boundaries/olym.geojson',
-  },
-  {
     id: 'petrified-forest',
     parkCode: 'pefo',
     name: 'Petrified Forest National Park',
@@ -497,9 +484,7 @@ export const PARKS: Park[] = [
     description: 'High mountain terrain and alpine lakes.',
     image: '/park-images/rocky-mountain.svg',
     boundaryUrl: '/boundaries/romo.geojson',
-    visits: [
-      { start: '2020-09-01', end: '2020-09-05' },
-    ],
+    visits: [{ start: '2020-09-01', end: '2020-09-05' }],
   },
   {
     id: 'saguaro',
@@ -588,7 +573,7 @@ export const PARKS: Park[] = [
     name: 'Yellowstone National Park',
     states: ['Wyoming', 'Montana', 'Idaho'],
     description: 'First national park, with geysers and wildlife.',
-    image: '/park-images/yellowstone.svg',
+    image: '/park-images/yellowstone.png',
     boundaryUrl: '/boundaries/yell.geojson',
   },
   {
@@ -597,11 +582,9 @@ export const PARKS: Park[] = [
     name: 'Yosemite National Park',
     states: ['California'],
     description: 'Famed granite cliffs, waterfalls and sequoias.',
-    image: '/park-images/yosemite.svg',
+    image: '/park-images/yosemite.png',
     boundaryUrl: '/boundaries/yose.geojson',
-    visits: [
-      { start: '2021-06-10', end: '2021-06-15' },
-    ],
+    visits: [{ start: '2021-06-10', end: '2021-06-15' }],
     memories: [
       {
         text: 'Hiked Half Dome',
@@ -616,7 +599,16 @@ export const PARKS: Park[] = [
     name: 'Zion National Park',
     states: ['Utah'],
     description: 'Towering sandstone cliffs and narrow slot canyons.',
-    image: '/park-images/zion.svg',
+    image: '/park-images/zion.png',
     boundaryUrl: '/boundaries/zion.geojson',
+  },
+  {
+    id: 'olympic',
+    parkCode: 'olym',
+    name: 'Olympic National Park',
+    states: ['Washington'],
+    description: 'Dominating the west skyline of Seattle. Diverse ecosystems from rainforest to alpine.',
+    image: '/park-images/olympic.png',
+    boundaryUrl: '/boundaries/olym.geojson',
   },
 ];
