@@ -65,6 +65,7 @@ import RowSpaceBetween from '@components/RowSpaceBetween';
 import Script from 'next/script';
 import Select from '@components/Select';
 import SidebarLayout from '@components/SidebarLayout';
+import StateParksVisualization from '@components/StateParksVisualization';
 import Table from '@components/Table';
 import TableRow from '@components/TableRow';
 import TableColumn from '@components/TableColumn';
@@ -151,6 +152,14 @@ export default async function Page(props) {
           Try our hosting provider Vercel
         </ActionListItem>
       </Grid>
+
+      <br />
+
+      <br />
+      <div style={{ width: '100%', maxWidth: '1200px', margin: '0 auto', padding: '20px' }}>
+        <StateParksVisualization width={1200} height={1000} />
+      </div>
+
       <Grid>
         <Accordion defaultValue={true} title="ACTION BAR">
           The action bar is a container for primary and secondary actions styled with a monospace font. Positioned at the top or bottom of an interface, it organizes elements like menu options, navigation buttons, titles, or search fields.

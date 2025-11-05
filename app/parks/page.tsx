@@ -13,14 +13,12 @@ export default function ParksPage() {
   return (
     <DefaultLayout>
       {/* <DefaultActionBar /> */}
-      <h1 style={{ margin: 16 }}>U.S. National Parks</h1>
+      <h1 style={{ margin: 16 }}>National Parks of the United States</h1>
 
       <Grid className={styles.grid}>
-        <ParkCard park={PARKS[PARKS.length - 1]} href={`/parks/${PARKS[PARKS.length - 1].id}`} />
-
-        {/* {PARKS.map((park) => (
+        {PARKS.map((park) => (
           <ParkCard key={park.id} park={park} href={`/parks/${park.id}`} />
-        ))} */}
+        ))}
       </Grid>
     </DefaultLayout>
   );
